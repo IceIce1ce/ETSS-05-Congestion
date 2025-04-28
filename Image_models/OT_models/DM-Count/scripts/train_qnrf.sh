@@ -1,0 +1,1 @@
+python train.py --type_dataset qnrf --dataset_dir data/qnrf --output_dir saved_qnrf

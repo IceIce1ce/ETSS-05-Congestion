@@ -1,0 +1,1 @@
+python train.py --type_dataset nwpu --dataset_dir data/nwpu --output_dir saved_nwpu

@@ -1,0 +1,1 @@
+python test.py --ckpt_dir checkpoints/model_nwpu.pth --dataset_dir data/nwpu --type_dataset nwpu --output_dir saved_density_nwpu

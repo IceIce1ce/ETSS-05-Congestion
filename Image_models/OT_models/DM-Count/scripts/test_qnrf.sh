@@ -1,0 +1,1 @@
+python test.py --ckpt_dir checkpoints/model_qnrf.pth --dataset_dir data/qnrf --type_dataset qnrf --output_dir saved_density_qnrf

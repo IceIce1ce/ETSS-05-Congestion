@@ -1,0 +1,1 @@
+python test.py --ckpt_dir checkpoints/model_sh_A.pth --dataset_dir data/ShanghaiTech/part_A --type_dataset sha --output_dir saved_density_sha

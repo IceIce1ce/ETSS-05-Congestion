@@ -1,0 +1,1 @@
+python train.py --type_dataset shb --dataset_dir data/ShanghaiTech/part_B --output_dir saved_shb

@@ -1,0 +1,1 @@
+python train.py --type_dataset sha --dataset_dir data/ShanghaiTech/part_A --output_dir saved_sha
