@@ -1,0 +1,1 @@
+python test.py --data-dir datasets/processed_shanghaitech_part_a --save-dir saved_shanghaitech_part_a --dataset shanghaitech

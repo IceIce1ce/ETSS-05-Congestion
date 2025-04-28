@@ -1,0 +1,1 @@
+python train.py --data-dir datasets/processed_shanghaitech_part_a --save-dir saved_shanghaitech_part_a --dataset shanghaitech --lr 1e-6 --background-ratio 0.1 --val-start 3
