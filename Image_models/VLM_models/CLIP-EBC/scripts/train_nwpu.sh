@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --model vgg19_ae --input_size 448 --reduction 8 --truncation 4 --anchor_points average --type_dataset nwpu --count_loss dmcount
+CUDA_VISIBLE_DEVICES=0 python main.py --model clip_vit_b_16 --input_size 224 --reduction 8 --truncation 4 --anchor_points average --type_dataset nwpu --count_loss dmcount

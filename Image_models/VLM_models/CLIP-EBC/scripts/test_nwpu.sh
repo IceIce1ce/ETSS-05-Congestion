@@ -1,0 +1,2 @@
+python test_nwpu.py --model vgg19_ae --input_size 448 --reduction 8 --truncation 4 --anchor_points average --ckpt_dir checkpoints/nwpu/vgg19_ae_448_8_4_fine_1.0_dmcount/ckpt.pth --output_dir saved_nwpu
+python test_nwpu.py --model clip_vit_b_16 --input_size 224 --reduction 8 --truncation 4 --anchor_points average --prompt_type word --num_vpt 32 --vpt_drop 0.0 --sliding_window --stride 224 --ckpt_dir checkpoints/nwpu/clip_vit_b_16_word_224_8_4_fine_1.0_dmcount/ckpt.pth

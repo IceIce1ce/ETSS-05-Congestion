@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --model clip_resnet50 --input_size 448 --reduction 8 --truncation 4 --anchor_points average --prompt_type word --type_dataset sha --count_loss dmcount
