@@ -1,0 +1,1 @@
+python main.py --input_dir datasets/jhu --ckpt_dir checkpoints/best.pth
