@@ -1,0 +1,1 @@
+python train.py --type_dataset shb --input_dir data/shb --output_dir saved_shb

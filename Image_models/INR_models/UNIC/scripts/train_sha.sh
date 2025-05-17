@@ -1,0 +1,1 @@
+python train.py --type_dataset sha --input_dir data/sha --output_dir saved_sha

@@ -1,0 +1,1 @@
+python main.py --config_file configs/NWPU_train.yml DATASETS.DATA_ROOT 'data/nwpu' TEST.THRESHOLD 0.5 OUTPUT_DIR 'saved_nwpu'

@@ -1,0 +1,1 @@
+python main.py --test --config_file configs/SHHB_test.yml TEST.WEIGHT 'weights/SHHB_best.pth' TEST.THRESHOLD 0.5 DATASETS.DATA_ROOT 'data/shb/part_B' OUTPUT_DIR 'saved_shb' VIS True

@@ -1,0 +1,1 @@
+python main.py --test --config_file configs/SHHA_test.yml TEST.WEIGHT 'weights/SHHA_best.pth' TEST.THRESHOLD 0.5 DATASETS.DATA_ROOT 'data/sha/part_A' OUTPUT_DIR 'saved_sha' VIS True

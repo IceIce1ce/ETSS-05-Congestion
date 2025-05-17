@@ -1,0 +1,1 @@
+python main.py --test --config_file configs/NWPU_test.yml TEST.WEIGHT 'weights/NWPU_best.pth' TEST.THRESHOLD 0.5 DATASETS.DATA_ROOT 'data/nwpu' OUTPUT_DIR 'saved_nwpu' VIS True

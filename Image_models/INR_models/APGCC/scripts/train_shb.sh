@@ -1,0 +1,1 @@
+python main.py --config_file configs/SHHB_train.yml DATASETS.DATA_ROOT 'data/shb/part_B' TEST.THRESHOLD 0.5 OUTPUT_DIR 'saved_shb'
