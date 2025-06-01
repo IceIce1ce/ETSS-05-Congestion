@@ -1,0 +1,1 @@
+python train.py --input_dir data/ShanghaiTech/part_B_final --output_dir saved_shb

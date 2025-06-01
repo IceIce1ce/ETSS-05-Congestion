@@ -1,0 +1,1 @@
+python test.py --input_dir data/ShanghaiTech/part_A_final --ckpt_dir saved_sha/best_model.pth
