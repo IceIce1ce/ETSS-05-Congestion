@@ -1,0 +1,15 @@
+DATASET: 'ShanghaiTech'
+ShanghaiTech:
+  DATA_PATH: 'datasets/sha/part_A_final/'
+  TARGET_DATA_PATH: 'datasets/sha/part_B_final/'
+  TENSOR_BOARD_PATH: 'saved_sha'
+  PRE_TRAINED_PATH: {'density': 'pretrained_models/15602.model', 'discriminator':''}
+  BATCH_SIZE: 16
+  LEARNING_RATE: 1e-6
+  EPOCH_NUM: 250000
+  STEPS: []
+  DECAY_RATE: 0.1
+  START_EPOCH: 0
+  SNAP_SHOT: 200
+  TEST_SIZE: {'train': 20, 'test': 200}
+  RESIZE: 512

@@ -1,0 +1,1 @@
+python process_dataset.py --type_dataset sha --input_dir datasets/sha

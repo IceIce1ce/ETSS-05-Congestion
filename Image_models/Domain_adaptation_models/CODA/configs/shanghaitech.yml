@@ -1,0 +1,14 @@
+DATASET: 'ShanghaiTech'
+ShanghaiTech:
+  DATA_PATH: 'datasets/sha/part_A_final/'
+  TENSOR_BOARD_PATH: 'saved_sha'
+  PRE_TRAINED_PATH: ''
+  BATCH_SIZE: 16
+  LEARNING_RATE: 1e-6
+  EPOCH_NUM: 250000
+  STEPS: []
+  DECAY_RATE: 0.1
+  START_EPOCH: 15601
+  SNAP_SHOT: 200
+  VAL_SIZE: 200
+  RESIZE: 512
