@@ -1,0 +1,1 @@
+python test.py --type_dataset qnrf --ckpt_dir checkpoints/SHHA_parameters.pth --input_dir datasets/UCF-QNRF/test_data

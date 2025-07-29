@@ -1,0 +1,1 @@
+python test_vis_single.py --type_dataset qnrf --ckpt_dir checkpoints/SHHA_parameters.pth --input_dir datasets/UCF-QNRF/test_data/img/1.jpg --output_dir outputs
