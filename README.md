@@ -76,6 +76,8 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 | CACC         | :heavy_check_mark: | :x:                | :x:                |
 | SASNet       | :heavy_check_mark: | :x:                | :x:                |
 | PAL          | :heavy_check_mark: | :x:                | :x:                |
+| CUT          | :heavy_check_mark: | :x:                | :x:                |
+| SGANet       | :heavy_check_mark: | :x:                | :x:                |
 
 ### 3.6 Supported Models for Domain Generalization Crowd Counting
 | Models  | ShanghaiTech       | UCF-QNRF           |
