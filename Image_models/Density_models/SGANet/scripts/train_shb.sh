@@ -1,0 +1,1 @@
+python headCounting_shanghaitech_segLoss.py --type_dataset shb --input_dir datasets/ShanghaiTech/part_B_final --output_dir saved_shb
