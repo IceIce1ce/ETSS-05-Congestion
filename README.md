@@ -64,6 +64,7 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 |--------|--------------------|--------------------|
 | APGCC  | :heavy_check_mark: | :heavy_check_mark: |
 | UNIC   | :heavy_check_mark: | :x:                |
+| SI-INR | :heavy_check_mark: | :x:                |
 
 ### 3.5 Supported Models for Density Crowd Counting
 | Models       | ShanghaiTech       | FDST               | UCF-QNRF           |
@@ -78,6 +79,7 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 | PAL          | :heavy_check_mark: | :x:                | :x:                |
 | CUT          | :heavy_check_mark: | :x:                | :x:                |
 | SGANet       | :heavy_check_mark: | :x:                | :x:                |
+| RankBench    | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
 ### 3.6 Supported Models for Domain Generalization Crowd Counting
 | Models  | ShanghaiTech       | UCF-QNRF           |
@@ -117,6 +119,23 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 |--------|--------------------|--------------------|
 | UGSDA  | :heavy_check_mark: | :x:                |
 | CODA   | :x:                | :heavy_check_mark: |
+
+### 3.12 Supported Models for GCN Crowd Counting
+| Models     | UCF-QNRF           | JHU-Crowd++        | ShanghaiTech       |
+|------------|--------------------|--------------------|--------------------|
+| Gramformer | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| GAAL       | :x:                | :x:                | :heavy_check_mark: |
+| MDGCN      | :x:                | :x:                | :x:                |
+
+### 3.13 Supported Models for GCN Video Crowd Counting
+| Models | FDST               |
+|--------|--------------------|
+| STGN   | :heavy_check_mark: |
+
+### 3.14 Supported Models for Open-world Object Counting
+| Models | ShanghaiTech       | FSC147             |
+|--------|--------------------|--------------------|
+| OVID   | :heavy_check_mark: | :heavy_check_mark: |
 
 ## 4. Citation
 If you find our work useful, please cite the following:
