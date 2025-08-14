@@ -1,0 +1,1 @@
+python process_dataset.py --type_dataset FDST --input_dir datasets/FDST

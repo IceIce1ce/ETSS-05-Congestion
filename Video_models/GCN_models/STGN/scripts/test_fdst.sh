@@ -1,0 +1,1 @@
+python test.py --type_dataset FDST --input_dir datasets/FDST --output_dir saved_fdst
