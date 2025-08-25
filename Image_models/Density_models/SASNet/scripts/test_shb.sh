@@ -1,0 +1,1 @@
+python main.py --input_dir data/ShanghaiTech/part_B_final --ckpt_dir checkpoints/SHHB.pth --type_dataset shb

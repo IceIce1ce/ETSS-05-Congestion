@@ -1,0 +1,1 @@
+python3 main.py --input_dir data/ShanghaiTech/part_A_final --ckpt_dir checkpoints/SHHA.pth --type_dataset sha
