@@ -31,8 +31,18 @@ For NWPU-Crowd dataset, please download it from this [link](https://gjy3035.gith
 
 For ShanghaiTech dataset, please download it from this [link](https://www.kaggle.com/datasets/tthien/shanghaitech/data)
 
+For STCrowd dataset, please download it from this [link](https://opendatalab.com/OpenDataLab/STCrowd)
+
+For NWPU-MOC dataset, please download it from this [repository](https://github.com/lyongo/NWPU-MOC)
+
+For Towards-vs-Away dataset, please download it from this [repository](https://github.com/rk620/Fine-Grained-CrowdCounting)
+
 ### 2.2. Video Crowd Counting Datasets
 For FDST dataset, please download it from this [repository](https://github.com/sweetyy83/Lstn_fdst_dataset)
+
+For VSCrowd dataset, please download it from this [link](https://huggingface.co/datasets/HopLeeTop/VSCrowd)
+
+For CroHD dataset, please download it from this [link](https://motchallenge.net/data/Head_Tracking_21/)
 
 ## 3. Usage
 ### 3.1 Supported Models for Bayesian Crowd Counting
@@ -67,19 +77,23 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 | SI-INR | :heavy_check_mark: | :x:                |
 
 ### 3.5 Supported Models for Density Crowd Counting
-| Models       | ShanghaiTech       | FDST               | UCF-QNRF           |
-|--------------|--------------------|--------------------|--------------------|
-| CSRNet       | :heavy_check_mark: | :x:                | :x:                |
-| People-Flows | :x:                | :heavy_check_mark: | :x:                |
-| S-DCNet      | :heavy_check_mark: | :x:                | :x:                |
-| SS-DCNet     | :heavy_check_mark: | :x:                | :heavy_check_mark: |
-| GCC-SFCN     | :x:                | :x:                | :heavy_check_mark: |
-| CACC         | :heavy_check_mark: | :x:                | :x:                |
-| SASNet       | :heavy_check_mark: | :x:                | :x:                |
-| PAL          | :heavy_check_mark: | :x:                | :x:                |
-| CUT          | :heavy_check_mark: | :x:                | :x:                |
-| SGANet       | :heavy_check_mark: | :x:                | :x:                |
-| RankBench    | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| Models       | ShanghaiTech       | FDST               | UCF-QNRF           | STCrowd            | NWPU-MOC           | Towards-vs-Away    | Mall               |
+|--------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| CSRNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| People-Flows | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| S-DCNet      | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SS-DCNet     | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| GCC-SFCN     | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| CACC         | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SASNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| PAL          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| CUT          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SGANet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| RankBench    | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| STCrowd      | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| NWPU-MOC     | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| FGCC         | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
+| LCSD         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
 
 ### 3.6 Supported Models for Domain Generalization Crowd Counting
 | Models  | ShanghaiTech       | UCF-QNRF           |
@@ -126,6 +140,7 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 | Gramformer | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | GAAL       | :x:                | :x:                | :heavy_check_mark: |
 | MDGCN      | :x:                | :x:                | :x:                |
+| DSGCNet    | :x:                | :x:                | :heavy_check_mark: |
 
 ### 3.13 Supported Models for GCN Video Crowd Counting
 | Models | FDST               |
@@ -136,6 +151,15 @@ For FDST dataset, please download it from this [repository](https://github.com/s
 | Models | ShanghaiTech       | FSC147             |
 |--------|--------------------|--------------------|
 | OVID   | :heavy_check_mark: | :heavy_check_mark: |
+
+### 3.15 Supported Models for Density Video Crowd Counting
+| Models  | VSCrowd            | CroHD              | FDST               |
+|---------|--------------------|--------------------|--------------------|
+| VSCrowd | :heavy_check_mark: | :x:                | :x:                |
+| DAANet  | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| AVCC    | :x:                | :x:                | :heavy_check_mark: |
+| OMAN    | :heavy_check_mark: | :x:                | :x:                |
+| FMDC    | :x:                | :heavy_check_mark: | :x:                |
 
 ## 4. Citation
 If you find our work useful, please cite the following:
