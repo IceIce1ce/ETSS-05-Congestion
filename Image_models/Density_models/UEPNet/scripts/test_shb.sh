@@ -1,0 +1,1 @@
+python test.py --type_dataset shb --train_lists datasets/ShanghaiTech/part_B/train_shb.txt --test_lists datasets/ShanghaiTech/part_B/test_shb.txt --dataset_mode shtechparta --ckpt_dir saved_sha --input_dir datasets/ShanghaiTech/part_B --model uep --phase test --vgg_post_pool --gpu_ids 0
