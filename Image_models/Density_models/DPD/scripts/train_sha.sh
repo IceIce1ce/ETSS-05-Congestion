@@ -1,0 +1,1 @@
+python train.py --type_dataset SHHA --output_dir saved_sha_to_shb --vis_dir vis_sha_to_shb --src_dataset SHHA --src_dir data/SHHA --target_dataset SHHB --target_dir data/SHHB

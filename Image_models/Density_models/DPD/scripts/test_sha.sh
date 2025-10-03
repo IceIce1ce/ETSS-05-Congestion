@@ -1,0 +1,1 @@
+python test.py --type_dataset SHHA --input_dir data/SHHA --output_dir saved_sha_to_shb --output_file val.txt --ckpt_dir saved_sha_to_shb/latest_state.pth
