@@ -1,0 +1,1 @@
+python test.py --json_file datasets/test.json --ckpt_dir fdst.pth.tar

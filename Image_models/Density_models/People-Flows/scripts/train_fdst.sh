@@ -1,0 +1,1 @@
+python train.py datasets/train.json datasets/val.json
