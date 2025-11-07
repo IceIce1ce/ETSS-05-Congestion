@@ -1,0 +1,1 @@
+python test.py --type_dataset CARPK --input_dir datasets/CARPK/test --ckpt_dir saved_carpk/PU2CA_parameters.pth

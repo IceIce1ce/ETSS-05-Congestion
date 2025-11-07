@@ -1,0 +1,2 @@
+python test_vis_single.py --type_dataset PUCPR --input_dir images/PUCPR_vis3.png --output_dir vis_pucpr --ckpt_dir saved_pucpr/CA2PU_parameters.pth
+python test.py --type_dataset PUCPR --input_dir datasets/PUCPR/test --ckpt_dir saved_pucpr/CA2PU_parameters.pth
