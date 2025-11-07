@@ -21,28 +21,50 @@ pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 --extra-index-url http
 
 ## 2. Dataset Preparation
 ### 2.1. Image Crowd Counting Datasets
-For RGBT-CC dataset, please download it from this [link](https://lingboliu.com/RGBT_Crowd_Counting.html).
+For the RGBT-CC dataset, please download it from this [link](https://lingboliu.com/RGBT_Crowd_Counting.html).
 
-For ShanghaiTech RGB-D dataset, please download it from this [repo](https://github.com/svip-lab/RGBD-Counting).
+For the ShanghaiTech RGB-D dataset, please download it from this [repo](https://github.com/svip-lab/RGBD-Counting).
 
-For UCF-QNRF dataset, please download it from this [link](https://www.crcv.ucf.edu/data/ucf-qnrf/)
+For the UCF-QNRF dataset, please download it from this [link](https://www.crcv.ucf.edu/data/ucf-qnrf/)
 
-For NWPU-Crowd dataset, please download it from this [link](https://gjy3035.github.io/NWPU-Crowd-Sample-Code/)
+For the NWPU-Crowd dataset, please download it from this [link](https://gjy3035.github.io/NWPU-Crowd-Sample-Code/)
 
-For ShanghaiTech dataset, please download it from this [link](https://www.kaggle.com/datasets/tthien/shanghaitech/data)
+For the ShanghaiTech dataset, please download it from this [link](https://www.kaggle.com/datasets/tthien/shanghaitech/data)
 
-For STCrowd dataset, please download it from this [link](https://opendatalab.com/OpenDataLab/STCrowd)
+For the STCrowd dataset, please download it from this [link](https://opendatalab.com/OpenDataLab/STCrowd)
 
-For NWPU-MOC dataset, please download it from this [repository](https://github.com/lyongo/NWPU-MOC)
+For the NWPU-MOC dataset, please download it from this [repository](https://github.com/lyongo/NWPU-MOC)
 
-For Towards-vs-Away dataset, please download it from this [repository](https://github.com/rk620/Fine-Grained-CrowdCounting)
+For the Towards-vs-Away dataset, please download it from this [repository](https://github.com/rk620/Fine-Grained-CrowdCounting)
+
+For the CARPK dataset, please download it from this [link](https://lafi.github.io/LPN/)
+
+For the FSC147 dataset, please download it from this [link](https://www.kaggle.com/datasets/xuncngng/fsc147-0)
+
+For the FruitNeRF dataset, please download it from this [link](https://zenodo.org/records/10869455)
+
+For the StackCounting dataset, please download it from this [link](https://zenodo.org/records/15609540)
+
+For the TRANCOS dataset, please download it from this [link](https://gram.web.uah.es/data/datasets/trancos/index.html)
+
+For the PUCPR dataset, please download it from this [link](https://lafi.github.io/LPN/)
+
+For the Crowd-SR dataset, please download it from this [repository](https://github.com/PRIS-CV/MSSRM)
+
+For the Mall dataset, please download it from this [repository](https://github.com/fyw1999/LCSD)
 
 ### 2.2. Video Crowd Counting Datasets
-For FDST dataset, please download it from this [repository](https://github.com/sweetyy83/Lstn_fdst_dataset)
+For the FDST dataset, please download it from this [repository](https://github.com/sweetyy83/Lstn_fdst_dataset)
 
-For VSCrowd dataset, please download it from this [link](https://huggingface.co/datasets/HopLeeTop/VSCrowd)
+For the VSCrowd dataset, please download it from this [link](https://huggingface.co/datasets/HopLeeTop/VSCrowd)
 
-For CroHD dataset, please download it from this [link](https://motchallenge.net/data/Head_Tracking_21/)
+For the CroHD dataset, please download it from this [link](https://motchallenge.net/data/Head_Tracking_21/)
+
+For the CARLA dataset, please download it from this [repository](https://github.com/LeoHuang0511/FMDC)
+
+For the MovingDroneCrowd dataset, please download it from this [repository](https://github.com/fyw1999/MovingDroneCrowd)
+
+For the DroneBird dataset, please download it from this [repository](https://github.com/mast1ren/E-MAC)
 
 ## 3. Usage
 ### 3.1 Supported Models for Bayesian Crowd Counting
@@ -52,10 +74,11 @@ For CroHD dataset, please download it from this [link](https://motchallenge.net/
 | NoisyCC       | :heavy_check_mark: | :x:                |
 
 ### 3.1 Supported Models for Multimodal Crowd Counting
-| Models | RGBT-CC            | ShanghaiTechRGBD   |
-|--------|--------------------|--------------------|
-| CSCA   | :heavy_check_mark: | :heavy_check_mark: |
-| IADM   | :heavy_check_mark: | :heavy_check_mark: |
+| Models  | RGBT-CC            | ShanghaiTechRGBD   |
+|---------|--------------------|--------------------|
+| CSCA    | :heavy_check_mark: | :heavy_check_mark: |
+| IADM    | :heavy_check_mark: | :heavy_check_mark: |
+| EAEFNet | :heavy_check_mark: | :x:                |
 
 ### 3.2 Supported Models for VLM Crowd Counting
 | Models   | ShanghaiTech       | NWPU-Crowd         | UCF-QNRF           |
@@ -77,23 +100,30 @@ For CroHD dataset, please download it from this [link](https://motchallenge.net/
 | SI-INR | :heavy_check_mark: | :x:                |
 
 ### 3.5 Supported Models for Density Crowd Counting
-| Models       | ShanghaiTech       | FDST               | UCF-QNRF           | STCrowd            | NWPU-MOC           | Towards-vs-Away    | Mall               |
-|--------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| CSRNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| People-Flows | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
-| S-DCNet      | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| SS-DCNet     | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| GCC-SFCN     | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| CACC         | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| SASNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| PAL          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| CUT          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| SGANet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| RankBench    | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| STCrowd      | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| NWPU-MOC     | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| FGCC         | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
-| LCSD         | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
+| Models       | ShanghaiTech       | FDST               | UCF-QNRF           | STCrowd            | CARPK | Towards-vs-Away    | Mall               | JHU-Crowd++        | NWPU-Crowd         | TRANCOS            | Crowd-SR           |
+|--------------|--------------------|--------------------|--------------------|--------------------|-------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| CSRNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| People-Flows | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| S-DCNet      | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SS-DCNet     | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| GCC-SFCN     | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| CACC         | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SASNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| PAL          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| CUT          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| SGANet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| RankBench    | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| STCrowd      | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| FGCC         | :x:                | :x:                | :x:                | :x:                | :x:   | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| P2PNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| UEPNet       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| FIDTM        | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| PML          | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                |
+| AutoScale    | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                |
+| IIM          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:   | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                |
+| DPD          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| MSSRGN       | :x:                | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
+| PMLoss       | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:   | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 
 ### 3.6 Supported Models for Domain Generalization Crowd Counting
 | Models  | ShanghaiTech       | UCF-QNRF           |
@@ -113,10 +143,12 @@ For CroHD dataset, please download it from this [link](https://motchallenge.net/
 | AWCC-Net | :heavy_check_mark: |
 
 ### 3.9 Supported Models for Transformer Crowd Counting
-| Models     | JHU-Crowd++        | NWPU               | ShanghaiTech       | QNRF               |
-|------------|--------------------|--------------------|--------------------|--------------------|
-| CLTR       | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                |
-| TransCrowd | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: |
+| Models     | JHU-Crowd++        | NWPU               | ShanghaiTech       | UCF-QNRF           | CARPK              | NWPU-MOC           | TRANCOS            |
+|------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| CLTR       | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
+| TransCrowd | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| PET        | :x:                | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| NWPU-MOC   | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
 
 ### 3.9 Supported Models for MoE Crowd Counting
 | Models | ShanghaiTech       |
@@ -124,15 +156,18 @@ For CroHD dataset, please download it from this [link](https://motchallenge.net/
 | HMoDE  | :heavy_check_mark: |
 
 ### 3.10 Supported Models for Knowledge Distillation Crowd Counting
-| Models | ShanghaiTech       | UCF-QNRF           |
-|--------|--------------------|--------------------|
-| SKT    | :heavy_check_mark: | :heavy_check_mark: |
+| Models  | ShanghaiTech       | UCF-QNRF           | Mall               |
+|---------|--------------------|--------------------|--------------------|
+| SKT     | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| LCSD    | :x:                | :x:                | :heavy_check_mark: |
+| P2RLoss | :heavy_check_mark: | :x:                | :x:                |
 
 ### 3.11 Supported Models for Domain Adaptation Crowd Counting
-| Models | UCF-QNRF           | Shanghaitech       |
-|--------|--------------------|--------------------|
-| UGSDA  | :heavy_check_mark: | :x:                |
-| CODA   | :x:                | :heavy_check_mark: |
+| Models | UCF-QNRF           | Shanghaitech       | CARPK              | PUCPR              |
+|--------|--------------------|--------------------|--------------------|--------------------|
+| UGSDA  | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| CODA   | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| CBD    | :x:                | :x:                | :heavy_check_mark: | :heavy_check_mark: |
 
 ### 3.12 Supported Models for GCN Crowd Counting
 | Models     | UCF-QNRF           | JHU-Crowd++        | ShanghaiTech       |
@@ -153,13 +188,28 @@ For CroHD dataset, please download it from this [link](https://motchallenge.net/
 | OVID   | :heavy_check_mark: | :heavy_check_mark: |
 
 ### 3.15 Supported Models for Density Video Crowd Counting
-| Models  | VSCrowd            | CroHD              | FDST               |
-|---------|--------------------|--------------------|--------------------|
-| VSCrowd | :heavy_check_mark: | :x:                | :x:                |
-| DAANet  | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| AVCC    | :x:                | :x:                | :heavy_check_mark: |
-| OMAN    | :heavy_check_mark: | :x:                | :x:                |
-| FMDC    | :x:                | :heavy_check_mark: | :x:                |
+| Models           | VSCrowd            | CroHD              | FDST               | CARLA              | MovingDroneCrowd   | DroneBird          |
+|------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| VSCrowd          | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| DAANet           | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| AVCC             | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| OMAN             | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| FMDC             | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| CGNet            | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| DRNet            | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| MovingDroneCrowd | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
+| DroneBird        | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
+
+### 3.16 Supported Models for Low-shot Crowd Counting
+| Models | FSC147             |
+|--------|--------------------|
+| FamNet | :heavy_check_mark: |
+
+### 3.17 Supported Models for 3D Crowd Counting
+| Models    | FruitNeRF          | StackCounting      |
+|-----------|--------------------|--------------------|
+| FruitNeRF | :heavy_check_mark: | :x:                |
+| 3DC       | :x:                | :heavy_check_mark: |
 
 ## 4. Citation
 If you find our work useful, please cite the following:
@@ -169,8 +219,8 @@ If you find our work useful, please cite the following:
   title        = {OpenCrowd: An Open Source Implementation of Crowd Counting Methods},
   publisher    = {GitHub},
   booktitle    = {GitHub repository},
-  howpublished = {https://github.com/SKKU-AutoLab-VSW/ETSS-07-CongestionDetection},
-  year         = {2023}
+  howpublished = {https://github.com/SKKU-AutoLab-VSW/ETSS-05-CongestionDetection},
+  year         = {2025}
 }
 ```
 
