@@ -1,0 +1,1 @@
+python test_HT21.py --ckpt_dir saved_ht21/ep_1_iter_500_mae_69.019_mse_69.169_seq_MAE_483.600_seq_MSE_483.600_WRAE_732.727_MIAE_45.842_MOAE_47.085.pth

@@ -1,0 +1,1 @@
+python test_SENSE.py --ckpt_dir saved_sense/ep_1_iter_500_mae_54.708_mse_63.166_seq_MAE_413.765_seq_MSE_472.042_WRAE_674.064_MIAE_37.196_MOAE_36.852.pth

@@ -1,0 +1,1 @@
+python train.py --type_dataset SENSE --output_dir saved_sense

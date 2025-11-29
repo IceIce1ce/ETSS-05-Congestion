@@ -1,0 +1,1 @@
+python train.py --type_dataset HT21 --output_dir saved_ht21

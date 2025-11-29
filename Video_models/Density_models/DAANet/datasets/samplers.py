@@ -1,0 +1,41 @@
+import torch
+import  random
+
+class CategoriesSampler():
+    def __init__(self, labels, frame_intervals, n_per):
+        self.frame_intervals = frame_intervals
+        self.n_sample = len(labels)
+        self.n_batch = self.n_sample// n_per
+        self.n_per = n_per
+        self.scenes = []
+        self.scene_id = {}
+        for idx, label in enumerate(labels):
+            scene_name = label['scene_name']
+            if scene_name not in self.scene_id.keys():
+                self.scene_id.update({scene_name:0})
+            self.scene_id[scene_name]+=1
+            self.scenes.append(scene_name)
+
+    def __len__(self):
+        return self.n_sample
+
+    def __iter__(self):
+        for i_batch in range(self.n_batch):
+            batch = []
+            frame_a = torch.randperm(self.n_sample)[:self.n_per]
+            for c in frame_a:
+                scene_name = self.scenes[c]
+                tmp_intervals = random.randint(self.frame_intervals[0], min(self.scene_id[scene_name] // 2, self.frame_intervals[1]))
+                if c < self.n_sample - tmp_intervals:
+                    if self.scenes[c + tmp_intervals] == scene_name:
+                        pair_c = c + tmp_intervals
+                    else:
+                        pair_c = c
+                        c = c - tmp_intervals
+                else:
+                    pair_c = c
+                    c = c - tmp_intervals
+                assert self.scenes[c] == self.scenes[pair_c]
+                batch.append(torch.tensor([c, pair_c]))
+            batch = torch.stack(batch).reshape(-1)
+            yield batch
