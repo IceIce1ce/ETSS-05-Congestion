@@ -1,0 +1,2 @@
+python test_opt.py --type_dataset DroneBird --input_dir datasets/DroneBird --ckpt_dir saved_dronebird/checkpoint-best.pth
+python toolkit/eval.py --type_dataset DroneBird --input_dir datasets/DroneBird --output_dir saved_dronebird/DroneBird_result.txt

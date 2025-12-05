@@ -1,0 +1,47 @@
+# general config
+in_domains: rgb-density
+out_domains: density
+extra_norm_pix_loss: False
+extra_unnorm_den_loss: False
+output_dir: 'saved_dronebird'
+ckpt_multi: 'cfgs/multimae-b_98_rgb+-depth-semseg_1600e_multivit-afff3f8c.pth'
+# model config
+model: emac_base
+decoder_dim: 256
+input_size: 512
+patch_size: 16
+alphas: 1.0 # dirichlet concentration
+num_encoded_tokens: 569
+total_num_tokens: 1024
+is_mask_inputs: False
+num_global_tokens: 1
+decoder_use_task_queries: True
+decoder_depth: 2
+# training config
+epochs: 210
+opt: adamw
+blr: 0.00035 # base_lr = 1e-4, lr = base_lr * batch_size / 256
+warmup_lr: 0.000001 # 1e-6
+min_lr: 0.00000001
+warmup_epochs: 15
+batch_size: 6
+hflip: 0.5
+loss_on_unmasked: True
+drop_path: 0.3
+weight_decay: 0.05
+eval_freq: 1
+eval_first: False
+train_print_freq: 10
+val_print_freq: 50
+use_opt_loss: True
+use_cur_loss: True
+use_tv_loss: True
+# dataset config
+data_path: 'datasets/DroneBird' 
+dataset: 'DroneBird'
+max_train_images: 50000
+max_val_images: 40000
+max_test_images: 54514
+data_clip_size: 2
+data_stride: 1
+num_workers: 4

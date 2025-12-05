@@ -1,0 +1,1 @@
+OMP_NUM_THREADS=1 torchrun --nproc_per_node=2 train_opt.py --config cfgs/density/DroneBird.yaml
