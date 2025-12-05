@@ -1,0 +1,15 @@
+from easydict import EasyDict as edict
+
+__C_CARLA = edict()
+cfg_data = __C_CARLA
+__C_CARLA.TRAIN_SIZE = (768,1024)
+__C_CARLA.DATA_PATH = 'data/CARLA/'
+__C_CARLA.TRAIN_LST = 'train.txt'
+__C_CARLA.VAL_LST = 'val.txt'
+__C_CARLA.TEST_LST = 'test.txt'
+__C_CARLA.MEAN_STD = ([0.3467, 0.5197, 0.4980], [0.2125, 0.0232, 0.0410])
+__C_CARLA.DEN_FACTOR = 200.
+__C_CARLA.RESUME_MODEL = ''
+__C_CARLA.TRAIN_BATCH_SIZE = 2
+__C_CARLA.TRAIN_FRAME_INTERVALS = (40,85)
+__C_CARLA.VAL_BATCH_SIZE = 1

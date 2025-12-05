@@ -1,0 +1,2 @@
+python test_HT21.py --type_dataset HT21 --ckpt_dir saved_den_ht21/ep_1_iter_1000_mae_30.234_mse_30.726_seq_MAE_220.805_WRAE_253.799_MIAE_21.129_MOAE_22.114.pth
+python test_speed.py --type_dataset HT21 --ckpt_dir saved_den_ht21/ep_1_iter_1000_mae_30.234_mse_30.726_seq_MAE_220.805_WRAE_253.799_MIAE_21.129_MOAE_22.114.pth
