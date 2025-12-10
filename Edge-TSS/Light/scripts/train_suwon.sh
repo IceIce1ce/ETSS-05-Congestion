@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset suwon --input_dir datasets/Suwon --output_dir saved_suwon --crop_size 256 --num_workers 8 --batch_size 64 # --visual True --write_loc True

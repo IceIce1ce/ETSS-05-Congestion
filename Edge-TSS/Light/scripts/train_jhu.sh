@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset jhu --input_dir datasets/jhu_crowd_v2.0 --output_dir saved_jhu --crop_size 512 --num_workers 8 # --visual True --write_loc True

@@ -1,0 +1,1 @@
+python test.py --type_dataset suwon --input_dir datasets/Suwon --output_dir saved_suwon --pre saved_suwon/model_best.pth --visual True

@@ -1,0 +1,1 @@
+python test.py --type_dataset nwpu --input_dir datasets/NWPU_CLTR --output_dir saved_nwpu --pre ckpts/model_best_nwpu.pth --visual True

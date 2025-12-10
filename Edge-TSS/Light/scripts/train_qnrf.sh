@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset qnrf --input_dir datasets/UCF-QNRF --output_dir saved_qnrf --crop_size 512 --num_workers 8 # --visual True --write_loc True

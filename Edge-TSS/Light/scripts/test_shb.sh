@@ -1,0 +1,1 @@
+python test.py --type_dataset shb --input_dir datasets/ShanghaiTech --output_dir saved_shb --pre ckpts/model_best.pth --visual True

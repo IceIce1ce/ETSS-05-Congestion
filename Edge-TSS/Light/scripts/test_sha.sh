@@ -1,0 +1,1 @@
+python test.py --type_dataset sha --input_dir datasets/ShanghaiTech --output_dir saved_sha --pre ckpts/model_best_57.pth --visual True

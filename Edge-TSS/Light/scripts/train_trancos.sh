@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset trancos --input_dir datasets/TRANCOS --output_dir saved_trancos --crop_size 256 --num_workers 8 # --visual True --write_loc True

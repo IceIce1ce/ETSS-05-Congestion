@@ -1,0 +1,1 @@
+python test.py --type_dataset jhu --input_dir datasets/jhu_crowd_v2.0 --output_dir saved_jhu --pre ckpts/model_best_jhu.pth --visual True

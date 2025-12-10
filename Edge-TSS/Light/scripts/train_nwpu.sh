@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset nwpu --input_dir datasets/NWPU_CLTR --output_dir saved_nwpu --crop_size 512 --num_workers 8 # --visual True --write_loc True
