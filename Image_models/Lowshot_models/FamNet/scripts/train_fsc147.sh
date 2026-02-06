@@ -1,0 +1,1 @@
+python train.py --type_dataset FSC147 --input_dir datasets/FSC147/images_384_VarV2 --gt_dir datasets/FSC147/gt_density_map_adaptive_384_VarV2 --output_dir saved_fsc147 --ann_dir data/annotation_FSC147_384.json --split_dir data/Train_Test_Val_FSC_147.json

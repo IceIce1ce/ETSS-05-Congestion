@@ -1,0 +1,3 @@
+python demo.py --input_dir assets/orange.jpg --bbox_dir assets/orange_box_ex.txt --output_dir saved_results --ckpt_dir data/pretrainedModels/FamNet_Save1.pth
+python demo.py --input_dir assets/orange.jpg --bbox_dir assets/orange_box_ex.txt --output_dir saved_results --ckpt_dir data/pretrainedModels/FamNet_Save1.pth --adapt
+# python demo.py --input_dir assets/orange.jpg --output_dir saved_results --ckpt_dir data/pretrainedModels/FamNet_Save1.pth

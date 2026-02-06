@@ -1,0 +1,2 @@
+python test.py --type_dataset FSC147 --input_dir datasets/FSC147/images_384_VarV2 --ann_dir data/annotation_FSC147_384.json --split_dir data/Train_Test_Val_FSC_147.json --test_split val --ckpt_dir data/pretrainedModels/FamNet_Save1.pth
+python test.py --type_dataset FSC147 --input_dir datasets/FSC147/images_384_VarV2 --ann_dir data/annotation_FSC147_384.json --split_dir data/Train_Test_Val_FSC_147.json --test_split val --ckpt_dir data/pretrainedModels/FamNet_Save1.pth --adapt
