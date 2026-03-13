@@ -5,18 +5,28 @@ This is the official repository of
 **OpenCounting: An Open Source Implementation of Crowd Counting Methods.**
 
 ## 1. Setup
-### 1.1. Using environment.yml
+### 1.1. Using conda
+#### 1.1.1. Using environment.yml
 ```bash
 conda env create -f environment.yml
 conda activate anomaly
+pip install -e .
 ```
 
-### 1.2. Using requirements.txt
+#### 1.1.2. Using requirements.txt
 ```bash
 conda create --name anomaly python=3.10.13
 conda activate anomaly
 pip install -r requirements.txt
 pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install -e .
+```
+
+### 1.2 Using uv
+```bash
+uv venv anomaly --python=3.10.12
+source anomaly/bin/activate
+uv pip install -e .
 ```
 
 ## 2. Dataset Preparation
@@ -52,6 +62,8 @@ For the PUCPR dataset, please download it from this [link](https://lafi.github.i
 For the Crowd-SR dataset, please download it from this [repository](https://github.com/PRIS-CV/MSSRM)
 
 For the Mall dataset, please download it from this [repository](https://github.com/fyw1999/LCSD)
+
+For the 3DCotton dataset, please download it from this [repository](https://github.com/robotic-vision-lab/CropNeRF-A-Neural-Radiance-Field-Based-Framework)
 
 ### 2.2. Video Crowd Counting Datasets
 For the FDST dataset, please download it from this [repository](https://github.com/sweetyy83/Lstn_fdst_dataset)
@@ -207,11 +219,12 @@ For the DroneBird dataset, please download it from this [repository](https://git
 | FamNet | :heavy_check_mark: |
 
 ### 3.17 Supported Models for 3D Crowd Counting
-| Models      | FruitNeRF          | StackCounting      |
-|-------------|--------------------|--------------------|
-| FruitNeRF   | :heavy_check_mark: | :x:                |
-| FruitNeRF++ | :heavy_check_mark: | :x:                |
-| 3DC         | :x:                | :heavy_check_mark: |
+| Models      | FruitNeRF          | StackCounting      | 3DCotton           |
+|-------------|--------------------|--------------------|--------------------|
+| FruitNeRF   | :heavy_check_mark: | :x:                | :x:                |
+| FruitNeRF++ | :heavy_check_mark: | :x:                | :x:                |
+| 3DC         | :x:                | :heavy_check_mark: | :x:                |
+| CropNeRF    | :x:                | :x:                | :heavy_check_mark: |
 
 ## 4. Citation
 If you find our work useful, please cite the following:
