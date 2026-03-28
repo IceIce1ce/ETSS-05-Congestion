@@ -1,0 +1,1 @@
+python main.py --type_dataset shb --input_dir data/ShanghaiTech/part_B --protocol_dir data/ShanghaiTech/part_B/shb-protocol.txt --output_dir saved_shb

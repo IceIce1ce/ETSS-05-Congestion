@@ -1,0 +1,1 @@
+python main.py --type_dataset sha --input_dir data/ShanghaiTech/part_A --protocol_dir data/ShanghaiTech/part_A/sha-protocol.txt --output_dir saved_sha
