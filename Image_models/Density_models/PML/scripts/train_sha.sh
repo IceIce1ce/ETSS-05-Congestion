@@ -1,0 +1,1 @@
+python train_csr.py --type_dataset sha --config configs/sha.json

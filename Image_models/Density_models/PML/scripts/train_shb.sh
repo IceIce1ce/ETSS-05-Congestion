@@ -1,0 +1,1 @@
+python train_csr.py --type_dataset shb --config configs/shb.json
