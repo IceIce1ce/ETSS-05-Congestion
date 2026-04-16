@@ -1,0 +1,1 @@
+python make_npydata.py --type_dataset SR-Crowd --input_dir datasets/SR-Crowd --output_dir npydata

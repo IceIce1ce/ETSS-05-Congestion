@@ -1,0 +1,1 @@
+python val.py --type_dataset Crowd-SR --pre saved_srcrowd/model_best_x2.pth --upscale x2
