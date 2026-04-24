@@ -1,0 +1,1 @@
+python baseline_train.py --batch_size 16 --epochs 1000 --lr 1e-6 --opt_type SGD --type_dataset shb --train_json B_train.json --val_json B_val.json --gt_ratio 2020_12_16_v2_rand_ --print_freq 400 --output_dir saved_shb --is_eval
