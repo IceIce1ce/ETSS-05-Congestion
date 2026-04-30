@@ -1,0 +1,1 @@
+python test.py --type_dataset trancos --input_dir datasets/TRANCOS --output_dir saved_trancos --pre saved_trancos/model_best.pth --visual True

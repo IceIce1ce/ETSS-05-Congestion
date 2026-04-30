@@ -1,0 +1,1 @@
+python test.py --type_dataset qnrf --input_dir datasets/UCF-QNRF --output_dir saved_qnrf --pre ckpts/model_best_qnrf.pth --visual True

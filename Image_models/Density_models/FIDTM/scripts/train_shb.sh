@@ -1,0 +1,1 @@
+python train_baseline.py --type_dataset shb --input_dir datasets/ShanghaiTech --output_dir saved_shb --crop_size 256 --num_workers 8 # --visual True --write_loc True

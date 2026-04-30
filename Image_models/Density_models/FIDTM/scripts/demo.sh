@@ -1,0 +1,1 @@
+python video_demo.py --pre ckpts/model_best.pth --video_path demo.mp4
